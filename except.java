@@ -17,7 +17,7 @@ public class except {
 			{
 				System.out.println("Enter the numerator");
 				int numer=sc.nextInt();
-				System.out.println("Enter the numerator");
+				System.out.println("Enter the denominator");
 				int denumer=sc.nextInt();
 				int result=numer/denumer;
 				System.out.println("Result:"+result);
@@ -25,7 +25,7 @@ public class except {
 			{
 				System.out.println("Exception  found: "+e.getMessage());
 			}
-
+			break;
 				
 		
 		case 2:
@@ -33,9 +33,9 @@ public class except {
 			try 
 			{
 				
-				System.out.println("Enter the array to be displayed");
+				System.out.println("Enter the array index to be displayed");
 				int ind=sc.nextInt();
-				System.out.println("Element is"+arr[ind]);
+				System.out.println("Element is "+arr[ind]);
 			}catch(ArrayIndexOutOfBoundsException e) 
 			{
 				System.out.println("Exception found: "+ e.getMessage());
@@ -49,4 +49,5 @@ public class except {
 		}
 		while(ch=='y'||ch=='Y');
 		sc.close();
+		System.out.println("Code executed successfully");
 }}
